@@ -7,3 +7,5 @@ import "mysql"
 include mysql
 import "mail"
 include mail
+import "composer"
+include composer

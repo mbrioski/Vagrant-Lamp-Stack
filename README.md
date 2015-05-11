@@ -1,13 +1,15 @@
 Vagrant LAMP Stack
 ------------------------
 
-[Vagrant](https://www.vagrantup.com) structure with [Puppet](https://puppetlabs.com) to set LAMP environment  with Ubuntu 14.04 LTS (32 bit)
+[Vagrant](https://www.vagrantup.com) base configuration with [Puppet](https://puppetlabs.com) to set LAMP environment with Ubuntu 14.04 LTS (32 bit)
 
 ##What come with this vagrant virtual machine
 - Apache2
 - Modrewrite enabled
 - Mysql
 - PHP5 with all the modules in the manifest configuration
+- Mail
+- Composer
 
 ##Install
 After having install vagrant and virtualbox on your computer, install the **vagrant box** *precise32* (Ubuntu 32bit):
