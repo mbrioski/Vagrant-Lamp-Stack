@@ -28,6 +28,7 @@ access to your virtual machine with:
 ```
 vagrant ssh
 ```
+**See apache2 working in your browser at url *http://localhost:8080**
 
 **Vagrant file configuration is in the root**
 
