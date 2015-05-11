@@ -1,7 +1,7 @@
 Vagrant LAMP Stack
 ------------------------
 
-[Vagrant](https://www.vagrantup.com) base configuration with [Puppet](https://puppetlabs.com) to set LAMP environment with Ubuntu 14.04 LTS (32 bit)
+[Vagrant](https://www.vagrantup.com) configuration with [Puppet](https://puppetlabs.com) to set LAMP environment with Ubuntu 14.04 LTS (32 bit) from Linux (Ubuntu - Debian distribution)
 
 ##What come with this vagrant virtual machine
 - Apache2
@@ -11,25 +11,33 @@ Vagrant LAMP Stack
 - Mail
 - Composer
 
+##Prerequisites
+- You are using Ubuntu or a Debian Distribution
+- Install Virtualbox
+- Install [Vagrant](https://www.vagrantup.com)
+- Install git (sudo apt-get install git)
+
 ##Install
-After having install vagrant and virtualbox on your computer, install the **vagrant box** *precise32* (Ubuntu 32bit):
-```
-vagrant box add precise32 http://files.vagrantup.com/precise32.box
-```
-now  fork and clone or just clone this repo:
+Fork and clone or just clone this repo:
 ```
 git clone git@github.com:ridesoft/VagrantLampStack.git yourprojectname
 ```
-now turn on your machine:
+###First time
+Enter in the folder of your project and set the environment:
 ```
-vagrant up
+./vlamp.sh
 ```
-access to your virtual machine with:
-```
-vagrant ssh
-```
+your virtual machine environment is already working
+
 **See apache2 working in your browser at url *http://localhost:8080**
 
-**Vagrant file configuration is in the root**
+###Switch on your virtual machine
+After you have installed the first time this package, you can use all vagrant command to use your LAMP virtual machine
+- vagrant up
+- vagrant halt
+- vagrant providing
+....
 
-**All modules and the configuration is in the provision folder**
+##Notes
+- Vagrant file configuration is in the root
+- All modules and the configuration is in the provision folder
