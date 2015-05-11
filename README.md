@@ -1,7 +1,7 @@
 Vagrant Lamp Stack
 ------------------------
 
-Simple (Vagrant)[https://www.vagrantup.com] structure with (Puppet)[https://puppetlabs.com] to set LAMP environment  with Ubuntu 14.04 LTS (32 bit)
+Simple [Vagrant](https://www.vagrantup.com) structure with [Puppet](https://puppetlabs.com) to set LAMP environment  with Ubuntu 14.04 LTS (32 bit)
 
 #What come with this vagrant virtual machine
 - Apache2
