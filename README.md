@@ -7,7 +7,7 @@ Vagrant LAMP Stack
 - Apache2
 - Modrewrite enabled
 - Mysql
-- PHP5 with all the modules in the manifest configuration
+- PHP5 with all the modules in the (module configuration)[https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp]
 - Mail
 - Composer
 
@@ -18,7 +18,7 @@ Vagrant LAMP Stack
 - Install git (sudo apt-get install git)
 
 ##Install
-Fork and clone or just clone this repo:
+Fork and clone, if you want to add some configuration, or just clone this repo:
 ```
 git clone git@github.com:ridesoft/VagrantLampStack.git yourprojectname
 ```
@@ -29,7 +29,7 @@ Enter in the folder of your project and set the environment:
 ```
 your virtual machine environment is already working
 
-**See apache2 working in your browser at url *http://localhost:8080**
+**See apache2 working in your browser at url http://localhost:8080**
 
 ###Switch on your virtual machine
 After you have installed the first time this package, you can use all vagrant command to use your LAMP virtual machine
