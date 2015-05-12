@@ -7,7 +7,7 @@ Vagrant LAMP Stack
 - Apache2
 - Modrewrite enabled
 - Mysql
-- PHP5 with all the modules in the (module configuration)[https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp]
+- PHP5 with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
 - Mail
 - Composer
 
