@@ -20,7 +20,7 @@ Vagrant LAMP Stack
 ##Install
 Fork and clone, if you want to add some configuration, or just clone this repo:
 ```
-git clone git@github.com:ridesoft/VagrantLampStack.git yourprojectname
+git clone git@github.com:ridesoft/Vagrant-Lamp-Stack.git yourprojectname
 ```
 ###First time
 Enter in the folder of your project and set the environment:
