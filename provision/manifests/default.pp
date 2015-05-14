@@ -1,6 +1,7 @@
 import "apache"
 include apache
 include modrewrite
+include apacheconf
 import "php"
 include php
 import "mysql"
