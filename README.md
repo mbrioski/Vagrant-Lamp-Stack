@@ -3,13 +3,13 @@ Vagrant LAMP Stack
 
 [Vagrant](https://www.vagrantup.com) configuration with [Puppet](https://puppetlabs.com) to set LAMP environment with Ubuntu 14.04 LTS (32 bit) from Linux (Ubuntu - Debian distribution)
 
-This repo give you the possibility to set up a standard LAMP development environment with only one command and share the environment thrown all the members of your team for developing web applications.
+This repo give you the possibility to set up a standard LAMP development environment, with only one command, share the environment with all the members of your team for developing web applications.
 
 ##Your development environment for web application
 After the installation you have a virtual host(*myapp.dev:8080*) set on a new LAMP Vagrant virtual machine shared to your local subfolder *src*
+![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/imgs/vagrantindexpage.jpg)
 
-![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/vagrantindexpage.jpg)
-###The virtual machine  come with_:
+###The virtual machine  come with:
 - Apache2
 - Modrewrite enabled
 - Mysql
@@ -37,7 +37,7 @@ Enter in the folder of your project and set the environment:
 ```
 It takes some time.
 
-your virtual machine environment is already working
+At the end Your virtual machine environment is already working
 
 **See apache2 working in your browser at url http://localhost:8080**
 
@@ -49,5 +49,6 @@ After you have installed the first time this package, you can use all vagrant co
 ....
 
 ##Notes
-- Vagrant file configuration is in the root
-- All modules and the configuration is in the provision folder
+- **VagrantFile** configuration is in the root
+- All modules and the configuration is in the **provision** folder
+- **Enjoy development without writing tons of doc and problems about environment configuration**
