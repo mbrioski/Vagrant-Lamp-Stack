@@ -13,9 +13,10 @@ After the installation you have a virtual host(*myapp.dev:8080*) set on a new LA
 - Apache2
 - Modrewrite enabled
 - Mysql
-- PHP5 with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
+- PHP5.4>= with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
 - Mail
 - Composer
+- XDebug
 
 **All configuration could be changed from the VagrantFile**
 
@@ -41,6 +42,8 @@ At the end Your virtual machine environment is already working
 
 **See apache2 working on port 8080 in your browser at url http://localhost:8080 or at http://myapp.dev:8080**
 
+###Configure XDebug to Run on remote virtual machine
+Todo
 ###Switch on your virtual machine
 After you have installed the first time this package, you can use all vagrant command to use your LAMP virtual machine
 - vagrant up

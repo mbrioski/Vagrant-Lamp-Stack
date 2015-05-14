@@ -46,10 +46,11 @@ ensure => present
 }
 package { "libapache2-mod-php5":
 ensure => present,
-require => [Package[php5], Package[apache2]]
+require => [Package['php5'], Package['apache2']]
 }
-#file { '/var/www/html/phpinfo.php':
-#source => 'puppet:///modules/apache/files/phpinfo.php',
-#require => Package['php5']
-#}
+package{ 'xdebug':
+  name => 'php5-xdebug',
+  ensure=> installed,
+  require=>Package["php5"]
+}
 }
