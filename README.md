@@ -50,5 +50,6 @@ After you have installed the first time this package, you can use all vagrant co
 
 ##Notes
 - **VagrantFile** configuration is in the root
+- Mysql default password for user root is *password*
 - All modules and the configuration is in the **provision** folder
 - **Enjoy development without writing tons of doc and problems about environment configuration**
