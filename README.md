@@ -39,7 +39,7 @@ It takes some time.
 
 At the end Your virtual machine environment is already working
 
-**See apache2 working in your browser at url http://localhost:8080**
+**See apache2 working on port 8080 in your browser at url http://localhost:8080 or at http://myapp.dev:8080**
 
 ###Switch on your virtual machine
 After you have installed the first time this package, you can use all vagrant command to use your LAMP virtual machine
