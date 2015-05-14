@@ -32,7 +32,14 @@ class apacheconf{
   mode => 777,
   require => File['/var/www/html']
   }
-  file { '/var/www/html/myapp/index.php':
+  file { '/var/www/html/myapp/src':
+  ensure => 'directory',
+  owner=>'root',
+  group => 'root',
+  mode => 777,
+  require => File['/var/www/html/myapp']
+  }
+  file { '/var/www/html/myapp/src/index.php':
     ensure=>'file',
     owner=>'root',
     group => 'root',
@@ -45,7 +52,7 @@ class apacheconf{
     owner=>'root',
     group => 'root',
     source => 'puppet:///modules/apache/default.conf',
-    require => File['/var/www/html/myapp/index.php']
+    require => File['/var/www/html/myapp/src/index.php']
   }
   exec { 'a2ensite':
     command => '/usr/sbin/a2ensite myapp.conf',
