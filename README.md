@@ -7,7 +7,7 @@ This repo give you the possibility to set up a standard LAMP development environ
 
 ##Your development environment for web application
 After the installation you have a virtual host(*myapp.dev:8080*) set on a new LAMP Vagrant virtual machine shared to your local subfolder *src*
-![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/imgs/vagrantindexpage.jpg)
+![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/imgs/browserscreenshot.png)
 
 ###The virtual machine  come with:
 - Apache2
