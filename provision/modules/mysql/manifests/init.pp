@@ -1,12 +1,12 @@
 class mysql {
 package { "mysql-server":
-ensure => present
+ensure => present,
 }
 package { "mysql-client":
-ensure => present
+ensure => present,
 }
 package { "libmysqlclient15-dev":
-ensure => present
+ensure => present,
 }
 file { '/home/vagrant/resetmysqlpwd.sh':
   ensure=>'file',

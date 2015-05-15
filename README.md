@@ -7,13 +7,13 @@ This repo give you the possibility to set up a standard LAMP development environ
 
 ##Your development environment for web application
 After the installation you have a virtual host(*myapp.dev:8080*) set on a new LAMP Vagrant virtual machine shared to your local subfolder *src*
-![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/imgs/browserscreenshot.png)
+![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/imgs/php5-5-24.png)
 
 ###The virtual machine  come with:
 - Apache2
 - Modrewrite enabled
 - Mysql
-- PHP5.4>= with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
+- PHP5.5>= with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
 - Mail
 - Composer
 - XDebug

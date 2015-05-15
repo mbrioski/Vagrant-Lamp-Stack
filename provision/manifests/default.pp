@@ -1,9 +1,11 @@
+import "software-properties"
+include software
 import "apache"
 include apache
 include modrewrite
 include apacheconf
 import "php"
-include php
+include php54
 import "mysql"
 include mysql
 import "mail"
