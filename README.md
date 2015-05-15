@@ -43,7 +43,7 @@ At the end Your virtual machine environment is already working
 **See apache2 working on port 8080 in your browser at url http://localhost:8080 or at http://myapp.dev:8080**
 
 ###Configure XDebug to Run on remote virtual machine
-Todo
+[Xdebug Doc](http://xdebug.org/docs/remote)
 ###Switch on your virtual machine
 After you have installed the first time this package, you can use all vagrant command to use your LAMP virtual machine
 - vagrant up
