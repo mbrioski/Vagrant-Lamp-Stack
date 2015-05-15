@@ -13,7 +13,7 @@ After the installation you have a virtual host(*myapp.dev:8080*) set on a new LA
 - Apache2
 - Modrewrite enabled
 - Mysql
-- PHP5.4>= with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
+- PHP5.3 with all the modules in the [module configuration](https://github.com/ridesoft/VagrantLampStack/blob/master/provision/modules/php/manifests/init.pp)
 - Mail
 - Composer
 - XDebug
