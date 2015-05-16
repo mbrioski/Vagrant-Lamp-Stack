@@ -90,49 +90,7 @@ class php54 {
       source => 'puppet:///modules/php/xdebug.ini',
       require => [Package['php5-xdebug'],Package['php5-fpm']]
   }
-
-  file { '/etc/php5/apache2/php.ini':
-    ensure=>present
-  }
-
-  file_line { 'zend_extension=/usr/lib/php5/20121212/xdebug.so':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'zend_extension=/usr/lib/php5/20121212/xdebug.so'
-  }
-  file_line { 'xdebug.remote_connect_back=1':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.remote_connect_back=1',
-  }
-
-  file_line { 'xdebug.remote_enable= 1':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.remote_enable= 1',
-  }
-
-  file_line { 'xdebug.remote_handler= dbgp':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.remote_handler= dbgp',
-  }
-
-  file_line { 'xdebug.remote_port= 9000':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.remote_port= 9000',
-  }
-
-  file_line { 'xdebug.remote_host=127.0.0.1':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.remote_host=127.0.0.1',
-  }
-
-  file_line { 'xdebug.profiler_enable= 1':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.profiler_enable= 1',
-  }
-
-  file_line { 'xdebug.idekey= "vagrant"':
-    path=>'/etc/php5/apache2/php.ini',
-    line=>'xdebug.idekey= "vagrant"',
-  }
+  
   exec{'/etc/init.d/php5-fpm restart':
     command=>'/etc/init.d/php5-fpm restart',
     require=>File['/etc/php5/cli/conf.d/xdebug.ini']
