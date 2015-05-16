@@ -32,7 +32,10 @@ Fork and clone, if you want to change some configuration, or just clone this rep
 ```
 git clone git@github.com:ridesoft/Vagrant-Lamp-Stack.git yourprojectname
 ```
-
+or if you have not a github account:
+```
+git clone https://github.com/ridesoft/Vagrant-Lamp-Stack
+```
 Enter in the folder of your project and run the script:
 ```
 ./vlamp.sh
