@@ -61,7 +61,7 @@ After you have installed the first time this package, you can use all vagrant co
 - vagrant up
 - vagrant halt
 - vagrant providing
-....
+- ....
 
 ##Notes
 - **VagrantFile** configuration is in the root
