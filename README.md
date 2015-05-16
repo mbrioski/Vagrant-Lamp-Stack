@@ -1,7 +1,7 @@
 Vagrant LAMP Stack
 ------------------------
 
-[Vagrant](https://www.vagrantup.com) configuration with [Puppet](https://puppetlabs.com) to set LAMP environment with Ubuntu 14.04 LTS (32 bit). PHP5.5>0, Apache2, ModRewrite, Mysql, Mail, Composer, XDebug
+[Vagrant](https://www.vagrantup.com) configuration with [Puppet](https://puppetlabs.com) to set LAMP environment with Ubuntu 14.04 LTS (32 bit). PHP5.5>=, Apache2, ModRewrite, Mysql, Mail, Composer, XDebug
 
 This repo give you the possibility to set up a standard LAMP development environment, with only one command and share the environment with all the members of your team for developing web applications. You don't care about the operating system to use on your local machine or which IDE, everything works on virtual machine and the code is shared from the virtual machine to your local project folder **src**.
 You have also XDebug working.
