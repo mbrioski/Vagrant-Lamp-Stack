@@ -6,7 +6,8 @@ Vagrant LAMP Stack
 This repo give you the possibility to set up a standard LAMP development environment, with only one command, share the environment with all the members of your team for developing web applications.
 
 ##Your development environment for web application
-After the installation you have a virtual host(*myapp.dev:8080*) set on a new LAMP Vagrant virtual machine shared to your local subfolder *src*
+After the installation you have a virtual host(*myapp.dev:8080*) set on a new LAMP virtual machine shared to your local subfolder *src*
+
 ![](https://github.com/ridesoft/Vagrant-Lamp-Stack/blob/master/doc/imgs/php5-5-24.png)
 
 ###The virtual machine  come with:
@@ -31,20 +32,31 @@ Fork and clone, if you want to change some configuration, or just clone this rep
 ```
 git clone git@github.com:ridesoft/Vagrant-Lamp-Stack.git yourprojectname
 ```
-###First time
-Enter in the folder of your project and set the environment:
+
+Enter in the folder of your project and run the script:
 ```
 ./vlamp.sh
 ```
+
 It takes some time.
 
-At the end Your virtual machine environment is already working
+At the end Your virtual machine environment is working
 
 **See apache2 working on port 8080 in your browser at url http://localhost:8080 or at http://myapp.dev:8080**
 
 ###Configure XDebug to Run on remote virtual machine
-[Xdebug Doc](http://xdebug.org/docs/remote)
-###Switch on your virtual machine
+Xdebug is already configured to work on your machine: just start your IDE in Debug mode and enjoy
+
+For particular configuration have a look at [Xdebug Doc](http://xdebug.org/docs/remote)
+
+###Mysql configuration
+Mysql root access from virtual machine:
+```
+mysql -uroot -ppassword
+```
+If you want to change the root password just open file */home/vagrant/resetmysqlpwd.sh*, type the new password and execute the script from terminal.
+
+###Vagrant
 After you have installed the first time this package, you can use all vagrant command to use your LAMP virtual machine
 - vagrant up
 - vagrant halt
@@ -53,6 +65,5 @@ After you have installed the first time this package, you can use all vagrant co
 
 ##Notes
 - **VagrantFile** configuration is in the root
-- Mysql default password for user root is *password*
 - All modules and the configuration is in the **provision** folder
 - **Enjoy development without writing tons of doc and problems about environment configuration**
