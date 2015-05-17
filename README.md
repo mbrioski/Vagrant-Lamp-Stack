@@ -36,6 +36,8 @@ or if you have not a github account:
 ```
 git clone https://github.com/ridesoft/Vagrant-Lamp-Stack
 ```
+or just download it.
+
 Enter in the folder of your project and run the script:
 ```
 ./vlamp.sh
